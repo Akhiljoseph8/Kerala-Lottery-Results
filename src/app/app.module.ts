@@ -58,10 +58,10 @@ import { AdsenseModule } from 'ng2-adsense';
     ReactiveFormsModule,
     provideFirebaseApp(() => initializeApp(firebaseConfig.firebase)),
     provideFirestore(() => getFirestore()),
-    AdsenseModule.forRoot({
-      adClient: 'ca-pub-3940256099942544',
-      adSlot: 6300978111,
-    }),
+    // AdsenseModule.forRoot({
+    //   adClient: 'ca-pub-3940256099942544',
+    //   adSlot: 6300978111,
+    // }),
   ],
   providers: [],
   bootstrap: [AppComponent]
