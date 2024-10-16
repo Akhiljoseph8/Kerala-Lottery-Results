@@ -1,0 +1,71 @@
+.content {
+    padding: 16px;
+}
+
+.content > mat-card {
+  width: 100%; /* Ensure full width of card */
+    
+}
+.card-header {
+  background-color: #388e3c;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  height: auto; /* Let the height adjust based on content */
+  padding: 16px; /* Added padding for better spacing */
+  text-align: center; /* Center the header text */
+  word-wrap: break-word; /* Ensure long text breaks properly */
+}
+
+/* Card content styling */
+.card-content {
+    padding: 16px;
+  }
+  
+  /* Grid container styles */
+  .grid-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;  /* Center the grid items horizontally */
+    align-items: start;       /* Align items at the start vertically */
+    gap: 16px;                /* Ensure consistent spacing between items */
+  }
+  
+  /* Grid item styling */
+  .grid-item {
+    min-width: 100px;   /* Set a minimum width for each grid item */
+    text-align: center; /* Align text to the center */
+    padding: 8px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    box-shadow: 2px 2px 6px rgba(0,0,0,0.1);
+   
+  }
+
+  
+  @media screen and (max-width: 599px) {
+    .mat-card {
+      padding: 12px;
+    }
+    
+    .mat-card-title {
+      font-size: 14px;
+    }
+    
+    .grid-item {
+      font-size: 12px;
+      
+    }
+    
+  }
+
+  .heading {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+
+  
+ 
+  

@@ -1,0 +1,42 @@
+.content {
+    padding: 16px;
+}
+
+.content > mat-card {
+    width: 200px;
+    
+}
+.card-header{
+    background-color: #388e3c;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    height: 90px;
+}
+
+.code-box {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-color: #ff9800; /* Background color of the code box */
+    color: white; /* Text color */
+    padding: 2px 6px; /* Padding for the code box */
+    border-radius: 4px; /* Rounded corners */
+    font-weight: bold; /* Bold text for the code */
+    font-size: 11px; /* Adjust font size */
+    z-index: 10; /* Ensures the box stays on top */
+  }
+  .new-badge {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: red;
+    color: white;
+    font-size: 12px;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-weight: bold;
+    z-index: 10;
+    text-transform: uppercase;
+  }
+  
