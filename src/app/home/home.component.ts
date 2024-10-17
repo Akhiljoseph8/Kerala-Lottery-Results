@@ -39,9 +39,6 @@ private parseDate(dateString: string): Date {
 
 
 goToResult(id: number) {
-  // (adsbygoogle = window.adsbygoogle || []).push({
-  //   google_ad_client: "ca-pub-3940256099942544",
-  // });
   this.router.navigate(['/result', id]);
 }
 

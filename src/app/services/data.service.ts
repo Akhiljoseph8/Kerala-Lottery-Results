@@ -19,7 +19,6 @@ export class DataService {
       
     } catch (error:any) {
       console.log(error.status)
-      
      return error
      
     }
@@ -34,7 +33,6 @@ export class DataService {
       
       if (docSnapshot.exists()) {
         const data = { id: docSnapshot.id, ...docSnapshot.data() }; // Fetch document data with ID
-        console.log('Fetched Document Data:', data);
         return data;
       } else {
         console.log("No such document!");

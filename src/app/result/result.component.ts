@@ -29,7 +29,7 @@ export class ResultComponent {
         this.getLotteryDetails(idParam)
         this.getLotteryInfo(idParam)
       } else {
-        this.id = null; // Handle case where ID is not present
+        this.id = null; 
       }
     });
     
@@ -40,7 +40,7 @@ async getLotteryDetails(id: string) {
   const docRef = doc(collection(this.firestore, 'PrizeDetails'), id);
   const docSnap = await getDoc(docRef);
   if (docSnap.exists()) {
-    this.prizeDetails = docSnap.data(); // Use the data
+    this.prizeDetails = docSnap.data(); 
     this.stringArrays = this.prizeDetails.prize_details.map((item: string) => {
       const delimiter ='  '
       return item.split(delimiter).map(subItem => subItem.trim()).filter(subItem => subItem !== ""); 
@@ -65,7 +65,6 @@ async getLotteryInfo(id: string) {
       this.arraylength=this.prizeInfo.prize_details.length
     this.numbers = this.createRange(this.arraylength);
     }
-    console.log('Document data:', this.prizeInfo.prize_details);
   } else {
     console.log('No such document!');
   }
@@ -75,7 +74,6 @@ async getLotteryInfo(id: string) {
 createRange(limit: number): number[] {
   return Array.from({ length: limit }, (_, index) => index);
 }
-
 
 
 

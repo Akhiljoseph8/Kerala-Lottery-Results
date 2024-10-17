@@ -37,7 +37,6 @@ findMatch(inputNumber: string): number | undefined {
   for (let i = 0; i < this.dataset.length; i++) {
       const item = this.dataset[i];
       const matchedElement = item.find(element => element === inputNumber);
-      console.log(item);
       if (matchedElement) {
          return this.prizeInfo.prize_details[i] 
       }

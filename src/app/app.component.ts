@@ -15,17 +15,6 @@ export class AppComponent  {
  
   
   title = 'lottery-result-app';
-  
-
- 
-
-  // Call to display the ad when a user action occurs, such as a button click or page load
-  //  triggerAd() {
-  //   (adsbygoogle = window.adsbygoogle || []).push({
-  //     google_ad_client: "ca-pub-3940256099942544",
-  //     // enable_page_level_ads: true
-  //   });
-  // }
 
   
 }

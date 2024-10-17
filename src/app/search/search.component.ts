@@ -51,12 +51,10 @@ export class SearchComponent {
         this.showResult = true;
         this.isMatchFound = true;
         this.confettiService.launchConfetti();
-        console.log(this.matchedItem)
         }
        
       } 
       else {
-        console.log(this.matchedItem)
         this.cardText="NO PRIZE THIS TIME"
         this.showResult = true;
         this.isMatchFound = false;
