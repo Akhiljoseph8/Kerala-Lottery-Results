@@ -10,8 +10,7 @@ import { ActivatedRoute } from '@angular/router';
   styleUrls: ['./result.component.css']
 })
 export class ResultComponent {
- 
-
+  
   constructor(public dataService: DataService, public firestore:Firestore, private route:ActivatedRoute ) { }
   id:any
   arraylength:any
@@ -76,6 +75,7 @@ async getLotteryInfo(id: string) {
 createRange(limit: number): number[] {
   return Array.from({ length: limit }, (_, index) => index);
 }
+
 
 
 
