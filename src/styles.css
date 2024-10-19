@@ -3,3 +3,19 @@
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+.container {
+    width: 100%; /* Full width by default */
+    margin-right: auto; /* Centering the container */
+    margin-left: auto;  /* Centering the container */
+    padding-right: 15px; /* Add some padding to prevent content from touching edges */
+    padding-left: 15px;
+    box-sizing: border-box; /* Ensure padding is included in the element's width */
+  }
+
+  /* html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  } */

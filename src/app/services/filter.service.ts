@@ -78,8 +78,7 @@ findMatch(inputNumber: string): number | undefined {
     const docRef = doc(collection(this.firestore, 'PrizeInfos'), id);
     const docSnap = await getDoc(docRef);
     if (docSnap.exists()) {
-      this.prizeInfo = docSnap.data(); // Use the data
-      console.log('Document data:', this.prizeInfo);
+      this.prizeInfo = docSnap.data(); 
     } else {
       console.log('No such document!');
     }

@@ -19,27 +19,27 @@
     align-items: center;
     justify-content: center;
     margin-bottom: 10px;
+    padding: 4px;
 }
   .mat-form-field {
-    width: 100%; /* Ensures the form field is responsive */
+    width: 100%; 
   }
   
   @media (max-width: 600px) {
     .mat-form-field {
-      width: 100%; /* Full width on smaller screens */
+      width: 100%;
     }
   }
   
   @media (min-width: 600px) and (max-width: 960px) {
     .mat-form-field {
-      width: 100%; /* Adjusts width for tablet screens */
+      width: 100%; 
     }
   }
   
   @media (min-width: 960px) {
-    /* On larger screens (desktops), limit the form fields to half-width */
     .mat-form-field {
-      width: 48%; /* 2 items per row */
+      width: 48%; 
     }
   
     .form-card {
@@ -55,43 +55,17 @@
 
   .responsive-card {
     width: 100%;
-    max-width: 400px;  /* Restrict the max width */
+    max-width: 400px;  
     margin: 10px;
   }
   
-  /* Full width for form fields */
+
   .full-width {
     width: 100%;
   }
   
 
-  /* Confetti container */
-.confetti-container {
-  position: relative;
-  width: 100%;
-  height: 100px;
-  overflow: hidden;
-}
 
-/* Confetti pieces */
-.confetti {
-  position: absolute;
-  width: 10px;
-  height: 10px;
-  background-color: red; /* Change this color or randomize for more colors */
-  animation: confetti-fall 3s infinite ease-in;
-}
 
-/* Define the confetti fall animation */
-@keyframes confetti-fall {
-  0% {
-    top: -10%;
-    left: 50%;
-    opacity: 1;
-  }
-  100% {
-    top: 100%;
-    left: calc(50% + 100px); /* Confetti moves to the side as it falls */
-    opacity: 0;
-  }
-}
+
+

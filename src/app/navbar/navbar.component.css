@@ -24,7 +24,7 @@
   }
   
   .collapse {
-    display: none; /* Hide the navbar items when collapsed */
+    display: none; 
   }
   
   .navbar-nav {
@@ -45,7 +45,7 @@
     text-decoration: underline;
   }
   
-  /* Responsive styles */
+ 
   @media (min-width: 768px) {
     .navbar-collapse {
       display: flex !important;

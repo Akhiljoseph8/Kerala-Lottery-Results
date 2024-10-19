@@ -59,7 +59,7 @@ async getLotteryInfo(id: string) {
   const docRef = doc(collection(this.firestore, 'PrizeInfos'), id);
   const docSnap = await getDoc(docRef);
   if (docSnap.exists()) {
-    this.prizeInfo = docSnap.data(); // Use the data
+    this.prizeInfo = docSnap.data(); 
     if (this.prizeInfo && Array.isArray(this.prizeInfo.prize_details)) {
       this.prizeInfo.prize_details = this.prizeInfo.prize_details.filter((item: string) => item !== "nill");
       this.arraylength=this.prizeInfo.prize_details.length

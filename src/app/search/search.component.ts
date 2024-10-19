@@ -9,7 +9,7 @@ import { Router } from '@angular/router';
   selector: 'app-search',
   templateUrl: './search.component.html',
   styleUrls: ['./search.component.css'],
-  providers: [DatePipe],  // Add DatePipe to providers
+  providers: [DatePipe], 
 
 })
 

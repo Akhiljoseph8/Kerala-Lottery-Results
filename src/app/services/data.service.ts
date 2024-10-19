@@ -32,11 +32,11 @@ export class DataService {
       const docSnapshot = await getDoc(docRef);
       
       if (docSnapshot.exists()) {
-        const data = { id: docSnapshot.id, ...docSnapshot.data() }; // Fetch document data with ID
+        const data = { id: docSnapshot.id, ...docSnapshot.data() }; 
         return data;
       } else {
         console.log("No such document!");
-        return null; // If the document does not exist
+        return null; 
       }
     } catch (error) {
       console.error("Error fetching document: ", error);

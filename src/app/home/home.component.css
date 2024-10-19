@@ -18,13 +18,13 @@
     position: absolute;
     top: 5px;
     right: 5px;
-    background-color: #ff9800; /* Background color of the code box */
-    color: white; /* Text color */
-    padding: 2px 6px; /* Padding for the code box */
-    border-radius: 4px; /* Rounded corners */
-    font-weight: bold; /* Bold text for the code */
-    font-size: 11px; /* Adjust font size */
-    z-index: 10; /* Ensures the box stays on top */
+    background-color: #ff9800; 
+    color: white; 
+    padding: 2px 6px; 
+    border-radius: 4px; 
+    font-weight: bold;
+    font-size: 11px; 
+    z-index: 10; 
   }
   .new-badge {
     position: absolute;
@@ -38,5 +38,9 @@
     font-weight: bold;
     z-index: 10;
     text-transform: uppercase;
+  }
+
+  .card{
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   }
   
