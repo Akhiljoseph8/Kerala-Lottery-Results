@@ -40,7 +40,7 @@ export class ResultComponent {
       }
     });
 
-    
+    (adsbygoogle = window.adsbygoogle || []).push({});
     
 }
 

@@ -48,7 +48,7 @@ private parseDate(dateString: string): Date {
 goToResult(id: number) {
  
   this.router.navigate(['/result', id]);
-  (adsbygoogle = window.adsbygoogle || []).push({});
+  
 }
 
 isNew(drawDate: string): boolean {

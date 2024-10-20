@@ -1,11 +1,4 @@
-<div class="ads-container">
-  <ins class="adsbygoogle"
-       style="display:block"
-       data-ad-client="ca-pub-4695677592428969"
-       data-ad-slot="8659478476"
-       data-ad-format="auto"
-       data-adtest="on"></ins>
-</div>
+
 <div class="content" fxLayout="row" fxLayoutAlign="center center" >
   <div fxFlex="80%" fxFlex.gt-md="70%">
     <div fxLayout="row wrap" fxLayoutGap="16px grid" >
@@ -16,7 +9,7 @@
         fxFlex.sm="50%"
         *ngFor="let i of lotteries"
       >
-        <mat-card class="mat-elevation-z4 card" >
+        <mat-card class="mat-elevation-z4 card">
           <mat-card-header  class="card-header">
             <div *ngIf="isNew(i.draw_date)" class="new-badge">NEW</div>
             <div class="code-box">{{i.id}}</div> 
