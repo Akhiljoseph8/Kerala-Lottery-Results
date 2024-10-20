@@ -4,6 +4,13 @@ import { Firestore} from '@angular/fire/firestore';
 import { Router } from '@angular/router';
 import { DatePipe } from '@angular/common';
 
+declare var adsbygoogle: any;
+declare global {
+  interface Window {
+    adsbygoogle: any[];
+  }
+}
+
 
 @Component({
   selector: 'app-home',
@@ -39,7 +46,9 @@ private parseDate(dateString: string): Date {
 
 
 goToResult(id: number) {
+ 
   this.router.navigate(['/result', id]);
+  (adsbygoogle = window.adsbygoogle || []).push({});
 }
 
 isNew(drawDate: string): boolean {
