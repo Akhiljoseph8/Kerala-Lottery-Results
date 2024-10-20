@@ -6,16 +6,19 @@
     <span *ngIf="lottery">{{ lottery?.lottery_name }}  ({{ lottery.draw_date }})</span> 
    </h2>
 
-  <!-- Ad Section -->
-  <!-- <div class="ad-container" style="margin-bottom: 20px;">
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4695677592428969" crossorigin="anonymous"></script>
+   <div class="ads-container">
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-client="ca-pub-4695677592428969"
+         data-ad-slot="8659478476"
+         data-ad-format="auto"
+         data-adtest="on"></ins>
+  </div>
+  <script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+  </script>
   
-    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-4695677592428969" data-ad-slot="8095032961" data-ad-format="auto" data-full-width-responsive="true"></ins>
-    <script>
-      (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
-  </div> -->
-
+   
   <div class="content" fxLayout="row" fxLayoutAlign="center center" style="width: 100%;">
     <div fxFlex="90%" fxFlex.gt-md="70%" fxFlex.gt-sm="80%">
       <div class="grid-container">
@@ -27,10 +30,10 @@
               <mat-card-title style="font-size: 18px;">{{prizeInfo.prize_details[i]}}</mat-card-title>
             </mat-card-header>
   
-            <!-- Card Content with Flexbox for content alignment -->
+           
             <mat-card-content class="card-content" style="padding: 16px;">
               <div class="grid-content" [ngClass]="{'single-item': stringArrays[i].length === 1}">
-                <!-- Number Grid with Flexbox -->
+                
                 <div *ngFor="let number of stringArrays[i]" class="grid-item">
                   {{ number }}
                 </div>

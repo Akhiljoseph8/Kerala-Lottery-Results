@@ -4,7 +4,7 @@ import { Firestore} from '@angular/fire/firestore';
 import { Router } from '@angular/router';
 import { DatePipe } from '@angular/common';
 
-declare var adsbygoogle: any;
+
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
