@@ -3,12 +3,12 @@ import { Firestore, collection,getDoc,doc } from '@angular/fire/firestore';
 import { DataService } from '../services/data.service';
 import { ActivatedRoute } from '@angular/router';
 
-// declare var adsbygoogle: any;
-// declare global {
-//   interface Window {
-//     adsbygoogle: any[];
-//   }
-// }
+declare var adsbygoogle: any;
+declare global {
+  interface Window {
+    adsbygoogle: any[];
+  }
+}
 
 
 @Component({
@@ -40,7 +40,7 @@ export class ResultComponent {
       }
     });
 
-
+    (adsbygoogle = window.adsbygoogle || []).push({});
     
 }
 
