@@ -40,7 +40,13 @@ export class ResultComponent {
       }
     });
 
-    (adsbygoogle = window.adsbygoogle || []).push({});
+    setTimeout(() => {
+      try {
+        (adsbygoogle = window.adsbygoogle || []).push({});
+      } catch (e) {
+        console.error('AdSense error:', e);
+      }
+    }, 200); // 200ms delay
     
 }
 

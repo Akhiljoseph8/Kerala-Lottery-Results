@@ -73,4 +73,10 @@
       grid-template-columns: repeat(2, 1fr);
     }
   }
+  .ad-container {
+    text-align: center;
+    margin: 20px auto;
+    width: 100%;
+    max-width: 728px; /* Based on your ad size */
+  }
   
